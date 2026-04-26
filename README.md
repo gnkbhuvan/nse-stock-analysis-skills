@@ -9,25 +9,25 @@
 Install all skills:
 
 ```bash
-npx skills add Bhala-Srinivash/nse-stock-analysis-skills --skill '*'
+npx skills add gnkbhuvan/nse-stock-analysis-skills --skill '*'
 ```
 
 Install only the main stock analysis skill:
 
 ```bash
-npx skills add Bhala-Srinivash/nse-stock-analysis-skills --skill stock-analysis
+npx skills add gnkbhuvan/nse-stock-analysis-skills --skill stock-analysis
 ```
 
 Install only the NSE multibagger skill:
 
 ```bash
-npx skills add Bhala-Srinivash/nse-stock-analysis-skills --skill nse-multibagger
+npx skills add gnkbhuvan/nse-stock-analysis-skills --skill nse-multibagger
 ```
 
 List available skills before installing:
 
 ```bash
-npx skills add Bhala-Srinivash/nse-stock-analysis-skills --list
+npx skills add gnkbhuvan/nse-stock-analysis-skills --list
 ```
 
 Skills live under `skills/<skill-name>/SKILL.md`, the standard layout used by the Skills CLI and skills.sh discovery.
@@ -197,6 +197,10 @@ Example output:
 
 These skills are educational tools for stock analysis. They do not constitute financial advice, investment advice, or a guarantee of returns. Always do your own research and consult a qualified financial advisor before investing.
 
+## Acknowledgements
+
+This project was inspired by the original [Bhala-Srinivash/nse-trading-skills](https://github.com/Bhala-Srinivash/nse-trading-skills) repository by Bhala Srinivash. That work focused on NSE/BSE trading-analysis skills; this repo expands the idea into a broader AI stock-analysis toolkit with fundamentals, valuation, news, technicals, risk analysis, investor mental models, and NSE multibagger screening.
+
 ## License
 
-MIT
+MIT. The original project was also MIT licensed; this revamped version keeps the same permissive license while preserving attribution.
