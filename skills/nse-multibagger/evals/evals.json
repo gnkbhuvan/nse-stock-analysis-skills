@@ -1,0 +1,41 @@
+{
+  "skill_name": "nse-multibagger",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Find top NSE multibagger candidates.",
+      "expected_output": "NSE multibagger screen with universe, data sources, top 10 ranked candidates, growth/quality/valuation/technical/risk scores, deep dives, worst-case scenarios, and Lynch-style one-liner",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Screen NSE 500 and smaller midcaps for undervalued growth stocks.",
+      "expected_output": "Quality-first screen across NSE 500 plus qualified small/midcaps with liquidity/governance filters, value-trap rejection, and ranked undervalued high-growth candidates",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Analyze CDSL like Peter Lynch.",
+      "expected_output": "Single-stock Peter Lynch-style deep dive with business understandability, Lynch classification, growth runway, financial quality, valuation comfort, technical setup, 3-5 year scenarios, worst case, and thesis breakers",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Which small/midcap NSE stocks have multibagger potential but low debt?",
+      "expected_output": "Screen emphasizing small/midcap candidates with manageable debt, clean cash conversion, governance checks, ranked scores, and position risk labels",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Give worst-case scenario for this multibagger candidate.",
+      "expected_output": "Worst-case scenario covering earnings reversal, margin pressure, debt or working-capital stress, governance issues, valuation de-rating, technical breakdown, and thesis invalidation",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Is this stock a true multibagger or a value trap?",
+      "expected_output": "Value-trap filter with growth quality, debt, cash conversion, governance, cyclicality, valuation, technical confirmation, final verdict, and position risk label",
+      "files": []
+    }
+  ]
+}

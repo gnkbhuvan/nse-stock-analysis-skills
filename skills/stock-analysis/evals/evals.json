@@ -1,0 +1,71 @@
+{
+  "skill_name": "stock-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze RELIANCE completely.",
+      "expected_output": "Complete NSE stock analysis report with business profile, news, financials, valuation, technicals, 1-year scenarios, risks, final AI view, and investor-style one-liner",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What upside can I expect in TATAMOTORS over one year?",
+      "expected_output": "Bull/base/bear 1-year price ranges with upside/downside percentages, assumptions, triggers, invalidation, and confidence",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Check if DMART is expensive or worth holding long term.",
+      "expected_output": "Quality + value investor assessment including valuation, business quality, margin of safety, risks, and final hold/add/watchlist view",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Analyze INFY like a quality + value investor.",
+      "expected_output": "Investor mental-model checklist covering business quality, moat, management, growth runway, valuation, downside risk, and final recommendation",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "What can go wrong with ZOMATO stock?",
+      "expected_output": "Red flag analysis with governance, earnings quality, valuation, sector, technical, and thesis-breaker risks",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Give me the final investor-style one-liner for SBIN.",
+      "expected_output": "Concise Jhunjhunwala-style or Damani-style educational one-liner without claiming to quote the investor",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Find top NSE multibagger candidates.",
+      "expected_output": "NSE multibagger screen with universe, data sources, top 10 ranked candidates, growth/quality/valuation/technical/risk scores, deep dives, worst-case scenarios, and Lynch-style one-liner",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Screen NSE 500 and smaller midcaps for undervalued growth stocks.",
+      "expected_output": "Quality-first screen across NSE 500 plus qualified small/midcaps with liquidity/governance filters, value-trap rejection, and ranked undervalued high-growth candidates",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Analyze CDSL like Peter Lynch.",
+      "expected_output": "Single-stock Peter Lynch-style deep dive with business understandability, Lynch classification, growth runway, financial quality, valuation comfort, technical setup, 3-5 year scenarios, worst case, and thesis breakers",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Give worst-case scenario for this multibagger candidate.",
+      "expected_output": "Worst-case scenario covering earnings reversal, margin pressure, debt or working-capital stress, governance issues, valuation de-rating, technical breakdown, and thesis invalidation",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Is this stock a true multibagger or a value trap?",
+      "expected_output": "Value-trap filter with growth quality, debt, cash conversion, governance, cyclicality, valuation, technical confirmation, final verdict, and position risk label",
+      "files": []
+    }
+  ]
+}
