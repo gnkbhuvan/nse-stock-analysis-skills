@@ -10,6 +10,24 @@ description: |
 
 Create the business foundation for a stock report before judging valuation or price action.
 
+## Tools
+
+USE these tools in this order to gather company identity and profile data:
+
+1. **Groww MCP symbol lookup** — resolve company name to NSE/BSE symbol, get sector, market cap, current price. This is the primary tool for stock identity.
+2. **Company annual report / investor presentation** — for business model, revenue segments, geographic spread, and competitive positioning.
+3. **NSE/BSE exchange filings** — for corporate actions, promoter details, and shareholding structure.
+4. **Finance portals** (Screener, Trendlyne, Tickertape) — for peer comparison, sector classification, and historical financial summary.
+5. **Web search** — for recent news, sector context, or management background when above tools are insufficient.
+
+If Groww MCP is not installed:
+
+```
+npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
+```
+
+Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
+
 ## Inputs
 
 - Company name and NSE/BSE symbol

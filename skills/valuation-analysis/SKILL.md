@@ -9,6 +9,16 @@ description: |
 
 Valuation should answer: is the stock price reasonable for the quality, growth, and risk?
 
+## Tools
+
+USE these tools in this order:
+
+1. **Groww MCP quote tool** — current price, market cap, and current P/E, P/B, EV/EBITDA if available. Primary source for live price data.
+2. **Finance portals** (Screener, Trendlyne, Tickertape) — historical P/E range, peer comparison, multi-year valuation tables. These are the primary source for valuation history and peer data.
+3. **Company annual report / investor presentation** — for segment-level valuation if sum-of-parts is relevant.
+4. **NSE/BSE filings** — for recent corporate actions (bonuses, splits, rights issues) that affect historical P/E comparability.
+5. **Web search** — only if the above tools do not provide historical valuation range or peer data.
+
 ## Inputs
 
 - Current market price and market cap

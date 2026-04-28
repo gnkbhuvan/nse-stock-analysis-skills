@@ -10,6 +10,27 @@ description: |
 
 Use technicals as timing and risk context. Do not let chart signals override weak fundamentals without saying so.
 
+## Tools
+
+USE these tools in this order for chart and price data:
+
+1. **Groww MCP candles and indicators** — primary tool. Fetch daily candles (200+ sessions) and weekly candles (2+ years) directly. Get RSI, MACD, Bollinger Bands, SMA/EMA values from the indicators tool.
+2. **yfinance** — fallback if Groww MCP is unavailable. Get OHLCV history, then calculate indicators manually.
+3. **NSE/BSE chart pages** — for 52-week range, recent price context if both tools above are unavailable.
+4. **Web search** — only for sector index data or relative strength comparison when tools above cannot provide it.
+
+Do not rely on web search for price data. If chart tools are unavailable, state this clearly and reduce confidence.
+
+## Tool Setup
+
+If Groww MCP is not installed:
+
+```
+npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
+```
+
+Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
+
 ## Data Needed
 
 - Current price, 52-week range, volume

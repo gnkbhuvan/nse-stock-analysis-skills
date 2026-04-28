@@ -13,18 +13,30 @@ description: |
 
 Use this workflow to produce a complete research-style report for NSE/BSE stocks. The default lens is quality + value investing with an educational caveat.
 
-## Data Collection
+## Tools
 
-Prefer primary and reliable sources in this order:
+USE these tools in this order. Web search is a last resort.
 
-1. NSE/BSE filings, exchange announcements, and corporate actions
-2. Company investor-relations pages, annual reports, quarterly results, presentations, transcripts
-3. Groww MCP quote, depth, indicators, candles, and holdings tools when available
-4. yfinance-style OHLCV history when needed
-5. Reputed business news and finance portals
-6. Social media or unverified commentary only as weak sentiment, never as fact
+1. **NSE/BSE filings and corporate actions** — exchange websites or Groww MCP filings tools
+2. **Company investor relations** — annual reports, quarterly results, investor presentations, transcripts
+3. **Groww MCP** — symbol lookup, live quote, depth, holdings, indicators, candles. This is the primary tool for price, volume, and chart data.
+4. **yfinance** — historical OHLCV, long-term price series for multi-year charts
+5. **Finance portals** (Screener, Trendlyne, Tickertape) — for multi-year ratios, peer comparison, and screening data
+6. **Business news** (Mint, ET, Bloomberg Quint, CNBCTV18) — recent developments and filings
+7. **Web search** — only for breaking news, general context, or when the above tools are unavailable
+8. **Social media** — weak sentiment signal only, never as fact
 
-If data is missing, continue with partial analysis, clearly state the gap, and lower confidence.
+## Tool Setup
+
+If Groww MCP is not installed, set it up first:
+
+```
+npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
+```
+
+Or install via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
+
+If yfinance is not available, the AI should say: "Live price and chart tools are unavailable. Analysis will use the last available data provided. Confidence is reduced."
 
 ## Master Workflow
 

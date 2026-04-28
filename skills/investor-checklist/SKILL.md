@@ -10,6 +10,8 @@ description: |
 
 Apply public investing principles as a checklist. Do not claim to quote or represent any investor.
 
+> **Data dependency:** This skill synthesizes from the outputs of `stock-profile`, `financial-report-analysis`, `valuation-analysis`, `red-flag-analysis`, and `technical-analysis`. If used standalone, gather those inputs first.
+
 ## Mental Models
 
 - **Jhunjhunwala-style:** big opportunity size, earnings growth, promoter quality, sector tailwind, long-term conviction.

@@ -9,6 +9,17 @@ description: |
 
 A good stock report must say what can go wrong.
 
+## Tools
+
+USE these tools in this order:
+
+1. **NSE/BSE exchange filings** — primary source for regulatory actions, auditor changes, pledge disclosures, and related-party transaction details.
+2. **Groww MCP holdings tool** — for promoter pledge status and shareholding pattern changes quarter-on-quarter.
+3. **Company annual report** — for auditor's report, related-party transactions, contingent liabilities, and CFO/comparator notes.
+4. **Finance portals** (Screener, Trendlyne) — for multi-year debt ratios, interest coverage, and CFO vs PAT trends. Use these to verify quantitative triggers.
+5. **Business news** (Mint, ET) — for regulatory actions, management exits, and litigation updates.
+6. **Web search** — only for unresolved legal cases or SEBI/RBI actions not yet on exchange filings.
+
 ## Risk Areas
 
 - **Governance:** promoter pledge, auditor issues, related-party transactions, regulatory actions, repeated dilution.

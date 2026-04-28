@@ -10,6 +10,8 @@ description: |
 
 Use ranges, not a single magic target. Tie every price range to business and valuation assumptions.
 
+> **Data dependency:** This skill requires current price, EPS, and a valuation multiple from `valuation-analysis` or `stock-profile`. If used standalone, gather those inputs first.
+
 ## Minimum Data Threshold
 
 Do not produce bull/base/bear scenarios unless you have at least:

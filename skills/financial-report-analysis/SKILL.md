@@ -10,6 +10,18 @@ description: |
 
 The goal is to judge whether business performance is improving, stable, or deteriorating, and whether profits are high quality.
 
+## Tools
+
+USE these tools in this order:
+
+1. **NSE/BSE exchange filings** — primary source for quarterly and annual financial results (PDF/text format from the exchange).
+2. **Company investor relations page** — annual reports, investor presentations, earnings transcripts. Best source for segment breakdown and management commentary.
+3. **Finance portals** (Screener, Trendlyne, Tickertape) — for multi-year ratio tables, peer comparison, and standardized financial data. Use for historical ratios (ROE, ROCE, margins) across 3-5 years.
+4. **Groww MCP holdings tool** — to check shareholding pattern and promoter holdings alongside financial data.
+5. **Web search** — only for news about financial irregularities, auditor changes, or regulatory actions not yet on the exchange.
+
+If data is thin (e.g., smallcap with limited disclosure), use whatever is available and label the analysis "limited data — low confidence."
+
 ## Data Needed
 
 - Latest quarterly and annual revenue, EBITDA/operating profit, PAT, EPS

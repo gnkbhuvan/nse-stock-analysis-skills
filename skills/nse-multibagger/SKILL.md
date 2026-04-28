@@ -23,17 +23,36 @@ This is an educational research framework. Never promise multibagger returns.
 6. **Deep dive strongest ideas:** Explain why the stock can grow multifold, what must go right, and what can go wrong.
 7. **Output top 10 plus deep dives:** Include avoid/watchlist names and thesis breakers.
 
-## Data Sources
+## Tools
 
-Prefer sources in this order:
+USE these tools in this order. Web search is not sufficient for a broad screen — these tools are required.
 
-1. NSE/BSE filings, shareholding pattern, corporate actions, and announcements
-2. Company annual reports, quarterly results, presentations, and transcripts
-3. Screener/finance portals for multi-year ratios and peer comparison
-4. Groww MCP or yfinance-style tools for price, volume, candles, and indicators
-5. Reputed business news for recent developments
+1. **Groww MCP** — symbol lookup, live quote, holdings, indicators, candles. Primary tool for price, volume, and chart data.
+2. **yfinance** — historical OHLCV, multi-year price history for long-term charts and relative strength calculations.
+3. **Finance portals** (Screener, Trendlyne, Tickertape) — multi-year financial ratios, peer comparison, promoter holdings, shareholding pattern. These are critical for the screening phase — use these before any web search.
+4. **NSE/BSE exchange filings** — shareholding pattern, corporate actions, director dealings.
+5. **Company annual reports / investor presentations** — for business model, growth runway, and segment details on deep-dive candidates.
+6. **Business news** (Mint, ET, Bloomberg Quint) — recent developments on candidates.
+7. **Web search** — only for breaking news or context when the above tools are unavailable.
 
-If broad screening data is unavailable, ask the user for a candidate list or analyze the provided stock deeply.
+## Tool Setup
+
+If Groww MCP is not installed, set it up first:
+
+```
+npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
+```
+
+Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
+
+## Fallback
+
+If broad screening data is unavailable (tools above not configured), do one of:
+- Ask the user for a specific stock list to analyze
+- Ask the user to provide screening data from a finance portal
+- Analyze the single provided stock deeply using the tools above
+
+Do not attempt a broad screen using web search alone. The output will be unreliable.
 
 ## Hard Rejection Filters
 

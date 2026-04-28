@@ -9,6 +9,8 @@ description: |
 
 The final view should synthesize evidence, not repeat every section.
 
+> **Data dependency:** This skill requires outputs from all other analysis skills. If used standalone, gather inputs from `stock-profile`, `financial-report-analysis`, `valuation-analysis`, `technical-analysis`, `scenario-forecasting`, `investor-checklist`, and `red-flag-analysis` first.
+
 ## Rating Scale
 
 - **Strong Buy:** quality business, attractive valuation, clean financials, favorable technicals, strong upside skew.
