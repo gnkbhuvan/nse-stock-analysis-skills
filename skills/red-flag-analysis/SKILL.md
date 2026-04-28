@@ -21,6 +21,23 @@ A good stock report must say what can go wrong.
 - **Technical:** major support breakdown, distribution volume, long-term moving average weakness.
 - **News:** unresolved litigation, penalties, management exits, adverse filings.
 
+## India-Specific Hard Triggers
+
+These are binary disqualifiers regardless of other scores. If any trigger is active, the stock should be rated at least "High risk":
+
+| Trigger | Threshold | Why It Matters |
+|---------|-----------|----------------|
+| Promoter pledge | >20% of promoter holdings pledged | Governance and margin-call risk |
+| Auditor qualification | Any qualified audit or emphasis of matter | Earnings may be materially misstated |
+| Auditor change without explanation | Sudden change in auditor | Possible disagreement on accounting |
+| Related-party transaction growth | RPTs growing faster than revenue | Potential tunneling |
+| CFO resignation | CFO leaves within 12 months of results | Usually signals internal concern |
+| Debt/EBITDA | >4x for non-financial companies | Stressed balance sheet, refinancing risk |
+| Interest coverage | ICR < 1.5x | Cannot service debt from operations |
+| CFO vs PAT ratio | CFO/PAT < 0.7 for two consecutive years | Earnings are not cash-backed |
+| Promoter pledged shares increase | Any material increase quarter-on-quarter | Margin call risk, governance signal |
+| SEBI action / regulatory scrutiny | Any SEBI or RBI enforcement action | Binary regulatory risk |
+
 ## Score
 
 Use a 0-10 red flag score:

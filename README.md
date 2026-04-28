@@ -54,9 +54,9 @@ These skills turn an AI agent into an Indian equity research assistant. The defa
 | 6 | **technical-analysis** | Weekly/daily chart structure, indicators, support/resistance, and key levels |
 | 7 | **scenario-forecasting** | 1-year bull/base/bear stock-price ranges with assumptions |
 | 8 | **investor-checklist** | Quality + value mental models inspired by public principles of great investors |
-| 9 | **red-flag-analysis** | Governance, debt, valuation, earnings, sector, liquidity, and technical risks |
+| 9 | **red-flag-analysis** | Governance, debt, valuation, earnings, sector, liquidity, and technical risks; includes India-specific hard triggers (promoter pledge threshold, auditor qualifications, ICR, CFO/PAT ratio) |
 | 10 | **final-recommendation** | Final rating, confidence, action zone, thesis, invalidation, and one-liner |
-| 11 | **nse-multibagger** | Peter Lynch-style screen for undervalued high-growth NSE multibagger candidates |
+| 11 | **nse-multibagger** | Peter Lynch-style screen for undervalued high-growth NSE multibagger candidates; includes India-specific hard filters (promoter pledge, auditor issues, debt/EBITDA, liquidity) |
 
 ## Usage Examples
 
@@ -146,7 +146,7 @@ The agent should clearly state what data is missing and reduce confidence where 
 
 ## Investor Mental Models
 
-The toolkit uses public principles associated with great investors. It must not claim to quote or represent any investor personally.
+The toolkit uses public principles associated with great investors. It must not claim to quote or represent any investor personally. When these principles appear in analysis output, they are educational shorthand — summaries of well-known public investing frameworks, not personal endorsements or exact quotes from any investor.
 
 - **Jhunjhunwala-style:** opportunity size, earnings growth, promoter quality, sector tailwind, conviction.
 - **Damani-style:** simple business, cash generation, valuation comfort, downside protection, patience.
@@ -158,6 +158,8 @@ The toolkit uses public principles associated with great investors. It must not 
 ## NSE Multibagger Screen
 
 Use **nse-multibagger** when the user asks for multibagger ideas, undervalued high-growth stocks, Peter Lynch-style analysis, or top NSE candidates.
+
+> **Attribution note:** "Peter Lynch-style" is public investing-principle shorthand. It does not claim to quote or represent Peter Lynch personally. Do not use it as an endorsement or exact recommendation from any investor.
 
 Default behavior:
 
@@ -176,12 +178,23 @@ Example output:
 | Rank | Stock | Lynch Type | Growth | Quality | Valuation | Technical | Risk | Verdict |
 
 ## Deep Dive: [Best Candidate]
-[Business story, why it can grow multifold, valuation comfort, technical setup, worst case, thesis breakers]
+- Business story: ...
+- Peter Lynch classification: ...
+- 3-5 year bull/base/bear scenarios: ...
+- Worst-case scenario: ...
+- Thesis breakers: ...
+- Position risk label: [Core / Satellite / Speculative / Avoid]
+- Final view: ...
+
+## Avoid / Watchlist Names
+[Stocks rejected or kept on watchlist and why]
 
 > Lynch-style one-liner: [simple one-line explanation]
 ```
 
 ## Rating Scale
+
+Full definitions are in the `final-recommendation` skill. Summary:
 
 | Rating | Meaning |
 |--------|---------|
