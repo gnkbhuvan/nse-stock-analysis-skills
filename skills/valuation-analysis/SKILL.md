@@ -19,6 +19,8 @@ USE these tools in this order:
 4. **NSE/BSE filings** — for recent corporate actions (bonuses, splits, rights issues) that affect historical P/E comparability.
 5. **Web search** — only if the above tools do not provide historical valuation range or peer data.
 
+If Groww MCP is unavailable, **USE yfinance immediately** to get current price and basic ratios via `.info`. Combine with finance portal data. Do not rely solely on web search for valuation inputs.
+
 ## Inputs
 
 - Current market price and market cap

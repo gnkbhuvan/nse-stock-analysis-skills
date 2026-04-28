@@ -36,7 +36,17 @@ npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
 
 Or install via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
 
-If yfinance is not available, the AI should say: "Live price and chart tools are unavailable. Analysis will use the last available data provided. Confidence is reduced."
+## Fallback: When Groww MCP Is Unavailable
+
+If Groww MCP is not available or returns no data:
+
+1. **USE yfinance immediately.** Import and call yfinance to get historical OHLCV data, current price, and basic financial data. Do not skip to web search.
+2. For price and volume: `yfinance.Ticker(symbol).history(period="2y")`
+3. For current quote: `yfinance.Ticker(symbol).info` (may return limited fields)
+4. For financials: `yfinance.Ticker(symbol).financials` and `.balance_sheet`
+5. Only use web search after yfinance has been attempted and still returns insufficient data.
+
+The AI must explicitly try yfinance before falling back to web search. If yfinance is available in the runtime, the AI should not skip it.
 
 ## Master Workflow
 

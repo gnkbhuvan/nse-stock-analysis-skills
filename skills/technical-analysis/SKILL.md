@@ -31,6 +31,8 @@ npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
 
 Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
 
+If Groww MCP is unavailable, **USE yfinance immediately** to get OHLCV data, then calculate indicators manually. Do not skip to web search for price data. Only use web search for sector index data or relative strength when yfinance also fails.
+
 ## Data Needed
 
 - Current price, 52-week range, volume

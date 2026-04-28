@@ -28,6 +28,8 @@ npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
 
 Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
 
+If Groww MCP is unavailable, **USE yfinance immediately** to get current price, market cap, and basic info via `.info`. For company profile data, use the annual report or investor presentation. Do not rely solely on web search for stock identity data.
+
 ## Inputs
 
 - Company name and NSE/BSE symbol

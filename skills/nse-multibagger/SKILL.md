@@ -45,14 +45,17 @@ npx @anthropic-ai/claude-code@latest config add --mcp-server groww-mcp
 
 Or add via Claude Code settings → MCP Servers → Add. Restart Claude Code after installation.
 
-## Fallback
+## Fallback: When Groww MCP Is Unavailable
 
-If broad screening data is unavailable (tools above not configured), do one of:
-- Ask the user for a specific stock list to analyze
-- Ask the user to provide screening data from a finance portal
-- Analyze the single provided stock deeply using the tools above
+If Groww MCP is not available or returns no data:
 
-Do not attempt a broad screen using web search alone. The output will be unreliable.
+1. **USE yfinance immediately.** Import and call yfinance to get historical OHLCV, current price, and basic financials. Do not skip to web search.
+2. For price and volume: `yfinance.Ticker(symbol).history(period="2y")`
+3. For current quote: `yfinance.Ticker(symbol).info`
+4. For financials: `yfinance.Ticker(symbol).financials` and `.balance_sheet`
+5. Only use web search after yfinance has been attempted and still returns insufficient data.
+
+The AI must explicitly try yfinance before falling back to web search. Web search alone is not sufficient for a broad multibagger screen.
 
 ## Hard Rejection Filters
 
